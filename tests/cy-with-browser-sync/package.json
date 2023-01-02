@@ -1,0 +1,9 @@
+{
+    "name": "ts-warn-test",
+    "version": "1.0.0",
+    "description": "Testing tsconfig warning message",
+    "devDependencies": {
+        "browser-sync": "^2.27.11",
+        "cypress": "^12.2.0"
+    }
+}

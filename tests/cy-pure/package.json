@@ -1,0 +1,8 @@
+{
+    "name": "ts-warn-test-pure",
+    "version": "1.0.0",
+    "description": "Testing tsconfig warning message only Cypress",
+    "devDependencies": {
+        "cypress": "^12.2.0"
+    }
+}
