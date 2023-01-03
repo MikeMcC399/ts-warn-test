@@ -1,5 +1,7 @@
 # "Couldn't find tsconfig.json" warning when no TypeScript in project
 
+Issue logged to https://github.com/cypress-io/cypress/issues/25335
+
 ## Current behavior
 
 If the npm module [browser-sync](https://www.npmjs.com/package/browser-sync) is installed, a warning message is displayed when Cypress is run:
@@ -72,7 +74,7 @@ is output.
 
 ## Desired behavior
 
-Installing [browser-sync](https://www.npmjs.com/package/browser-sync) without any TypeScript files (*.ts, *.tsx) should not cause a warning message to appear.
+Installing [browser-sync](https://www.npmjs.com/package/browser-sync) without any TypeScript files (*.ts, *.tsx) should not cause a warning message to appear when Cypress is run.
 
 ## Test code to reproduce
 
