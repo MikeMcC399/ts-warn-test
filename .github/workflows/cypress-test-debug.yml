@@ -5,8 +5,6 @@ on:
 
 env:
   DEBUG: cypress:*
-  NO_COLOR: true
-  TERM: xterm
 
 jobs:
   Cypress-Test-Pure:
@@ -15,16 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js 18 environment
-        uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/hydrogen'
-
-      - name: Install npm dependencies
-        run: npm --prefix ./tests/cy-pure ci
-
       - name: Cypress run
-        run: npx cypress run --project ./tests/cy-pure --e2e --browser chrome
+        uses: cypress-io/github-action@v5
+        with:
+          working-directory: tests/cy-pure
+          browser: chrome
 
   Cypress-Test-Warning:
     runs-on: ubuntu-22.04
@@ -32,13 +25,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js 18 environment
-        uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/hydrogen'
-
-      - name: Install npm dependencies
-        run: npm --prefix ./tests/cy-with-browser-sync ci
-
       - name: Cypress run
-        run: npx cypress run --project ./tests/cy-with-browser-sync --e2e --browser chrome
+        uses: cypress-io/github-action@v5
+        with:
+          working-directory: tests/cy-with-browser-sync
+          browser: chrome
