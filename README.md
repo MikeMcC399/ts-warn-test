@@ -94,11 +94,13 @@ npx cypress run
 
 ## Cypress version
 
-12.2.0
+- 12.2.0
+- 12.5.1
 
 ## Node version
 
-16.13.0 for GitHub runner using [cypress-io/github-action](https://github.com/cypress-io/github-action)
+- 16.13.0 for GitHub runner using [cypress-io/github-action](https://github.com/cypress-io/github-action)
+- 16.16.0
 
 ## Operating System
 
