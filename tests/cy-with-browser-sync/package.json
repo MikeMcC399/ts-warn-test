@@ -4,6 +4,6 @@
     "description": "Testing tsconfig warning message",
     "devDependencies": {
         "browser-sync": "^2.27.11",
-        "cypress": "^12.2.0"
+        "cypress": "12.5.1"
     }
 }

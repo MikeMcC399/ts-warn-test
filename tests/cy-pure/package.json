@@ -3,6 +3,6 @@
     "version": "1.0.0",
     "description": "Testing tsconfig warning message only Cypress",
     "devDependencies": {
-        "cypress": "^12.2.0"
+        "cypress": "12.5.1"
     }
 }
