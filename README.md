@@ -97,6 +97,7 @@ npx cypress run
 - 12.2.0
 - 12.5.1
 - 12.6.0
+- 12.8.1
 
 ## Node version
 
