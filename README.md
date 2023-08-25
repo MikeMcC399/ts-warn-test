@@ -1,3 +1,5 @@
+**Archived - this issue no longer occurs due to changes in [browser-sync](https://www.npmjs.com/package/browser-sync)**
+
 # "Couldn't find tsconfig.json" warning when no TypeScript in project
 
 Issue logged to https://github.com/cypress-io/cypress/issues/25335
